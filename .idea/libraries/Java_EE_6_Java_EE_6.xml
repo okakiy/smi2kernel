@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Java EE 6-Java EE 6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/dist/javax/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/dist/javax/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/dist/javax/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/dist/javax/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/dist/javax/javax.servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/dist/javax/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/dist/javax/javax.servlet.jsp.jstl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
