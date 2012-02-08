@@ -52,9 +52,10 @@ public class NewsController {
 
         os.flush();
         Runtime r = Runtime.getRuntime();
-        long used = (r.totalMemory() - r.freeMemory())/1048576;
+        long free = r.freeMemory()/1048576;
+        long used = r.totalMemory()/1048576 - free;
         long max = r.maxMemory()/1048576;
 
-        System.out.printf("Memory: %dM(%dM)%n",used,max);
+        System.out.printf("Memory: %dM(%dM) free: %dM%n", used, max, free);
     }
 }

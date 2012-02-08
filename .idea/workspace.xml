@@ -7,94 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85d2671d-f22e-4602-b0a7-1222ebfd6a22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/commons/commons-logging-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/commons/commons-logging-adapters-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/commons/commons-logging-api-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/commons/commons-logging-tests.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/antlr-2.7.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/commons-collections-3.2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/dom4j-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/hibernate-commons-annotations-4.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/hibernate-core-4.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/javassist-3.15.0-GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/jboss-logging-3.1.0.CR2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/hibernate/jboss-transaction-api_1.1_spec-1.0.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/jackson/jackson-core-lgpl-1.9.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/jackson/jackson-mapper-lgpl-1.9.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/javax/javax.annotation.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/javax/javax.ejb.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/javax/javax.jms.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/javax/javax.resource.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/javax/javax.servlet.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/javax/javax.servlet.jsp.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/javax/javax.servlet.jsp.jstl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/mysql/mysql-connector-java-5.1.18-bin.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.aop-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.asm-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.aspects-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.beans-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.context-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.context.support-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.core-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.expression-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.instrument-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.instrument.tomcat-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.jdbc-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.jms-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.orm-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.oxm-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.test-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.transaction-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.web-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.web.portlet-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.web.servlet-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dist/springframework/org.springframework.web.struts-3.1.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/docs/commons/commons-logging-1.1.1-javadoc.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/src/commons/commons-logging-1.1.1-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/smi2_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/okakiy.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hibernate.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jpa.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/springframework.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smi2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/Smi2Entity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClansEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsAdditionalEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsLevelsEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiCommentsEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiImagesEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsListJson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsPool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/smi2/kernel/entities/PoolManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/hibernate.cfg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/smi2-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java" afterPath="$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java" />
     </list>
     <ignored path="smi2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -164,7 +78,7 @@
       <file leaf-file-name="NewsController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="42" selection-start="1551" selection-end="1551" vertical-scroll-proportion="1.4282787">
+            <state line="58" column="55" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.87909836">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,11 +114,11 @@
         <option value="$PROJECT_DIR$/src/net/smi2/TestClass.java" />
         <option value="$PROJECT_DIR$/src/net/smi2/tmp.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/smi2-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java" />
         <option value="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java" />
         <option value="$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java" />
         <option value="$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsPool.java" />
         <option value="$PROJECT_DIR$/smi2/web/WEB-INF/classes/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java" />
       </list>
     </option>
   </component>
@@ -312,7 +226,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="options.lastSelected" value="Web Contexts" />
     <property name="project.structure.side.proportion" value="0.20000003" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -645,14 +559,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.55233854" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6080178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3429844" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24327177" sideWeight="0.5700326" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55122495" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42873052" sideWeight="0.5048077" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42873052" sideWeight="0.5069444" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
@@ -663,7 +577,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32959402" sideWeight="0.5712695" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42873052" sideWeight="0.491453" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42873052" sideWeight="0.48931623" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
@@ -854,7 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="42" selection-start="1551" selection-end="1551" vertical-scroll-proportion="1.4282787">
+        <state line="58" column="55" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.87909836">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
