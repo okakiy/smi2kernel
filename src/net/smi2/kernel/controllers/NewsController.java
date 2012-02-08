@@ -56,6 +56,6 @@ public class NewsController {
         long used = r.totalMemory()/1048576 - free;
         long max = r.maxMemory()/1048576;
 
-        System.out.printf("Memory: %dM(%dM) free: %dM%n", used, max, free);
+        System.out.printf("Memory used: %dM(%dM) free: %dM%n", used, max, free);
     }
 }
