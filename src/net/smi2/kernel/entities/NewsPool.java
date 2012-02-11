@@ -1,7 +1,6 @@
 package net.smi2.kernel.entities;
 
 import net.smi2.entities.db.SmiNewsEntity;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Order;
@@ -25,16 +24,16 @@ public class NewsPool {
         System.out.println("Getting news");
 
         List<SmiNewsEntity> news;
-        try {
+        //try {
             final Session session = new Configuration().configure().buildSessionFactory().openSession();
             news = session.createCriteria(SmiNewsEntity.class).addOrder(Order.desc("id")).setMaxResults(1000).list();
             session.close();
             System.out.println("total news: " + news.size());
             newslist.addAll(news);
-        } catch (HibernateException e) {
+        //} catch (HibernateException e) {
             System.out.println("Can't load data.");
 //            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
+        //}
 
     }
 

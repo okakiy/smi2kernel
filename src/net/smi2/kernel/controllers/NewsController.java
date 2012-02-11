@@ -29,6 +29,7 @@ public class NewsController {
             @RequestParam(value = "of", required = false, defaultValue = "0") int of,
             @RequestParam(value = "cnt", required = false, defaultValue = "10") int cnt,
             @RequestParam(value = "as", required = false, defaultValue = "JSON") String as,
+            @RequestParam(value = "debug", required = false, defaultValue = "0") Byte debug,
             HttpServletResponse response
     ) throws IOException {
         NewsPool newsPool = poolManager.getNewsPool();
@@ -51,11 +52,13 @@ public class NewsController {
         }
 
         os.flush();
-        Runtime r = Runtime.getRuntime();
-        long free = r.freeMemory()/1048576;
-        long used = r.totalMemory()/1048576 - free;
-        long max = r.maxMemory()/1048576;
 
-        System.out.printf("Memory used: %dM(%dM) free: %dM%n", used, max, free);
+        if ( debug == 1 ) {
+            Runtime r = Runtime.getRuntime();
+            long free = r.freeMemory() / 1048576;
+            long used = r.totalMemory() / 1048576 - free;
+            long max = r.maxMemory() / 1048576;
+            System.out.printf("Memory used: %dM(%dM) free: %dM%n", used, max, free);
+        }
     }
 }

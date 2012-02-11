@@ -10,7 +10,7 @@ import java.sql.Timestamp;
  * Date: 02.02.12
  * Time: 13:36
  */
-@javax.persistence.Table(name = "smi_news", schema = "", catalog = "smi20")
+@javax.persistence.Table(name = "smi_news", schema = "", catalog = "")
 @Entity
 public class SmiNewsEntity extends Smi2Entity {
     private Integer id;

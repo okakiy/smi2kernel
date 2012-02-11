@@ -4,13 +4,15 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost/smi20?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password"></property>
-        <!-- property name="connection.url">jdbc:mysql://localhost:33306/dev_smi20_new?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull</property>
-        <property name="connection.username">dev_smi2</property>
-        <property name="connection.password">smi2010dev</property-->
+
+        <!-- property name="connection.url">jdbc:mysql://localhost/smi2test?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull</property>
+        <property name="connection.username">smi2</property>
+        <property name="connection.password">smi2</property-->
+
+        <property name="connection.datasource">jdbc/MySQLDS</property>
+
         <property name="connection.pool_size">1</property>
+        <property name="connection.zeroDateTimeBehavior">convertToNull</property>
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
 
