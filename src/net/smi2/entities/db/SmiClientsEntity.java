@@ -13,15 +13,15 @@ import java.sql.Timestamp;
 @javax.persistence.Table(name = "smi_clients", schema = "", catalog = "smi20")
 @Entity
 public class SmiClientsEntity {
-    private int generatorId;
+    private Integer generatorId;
 
     @javax.persistence.Column(name = "generator_id")
     @Id
-    public int getGeneratorId() {
+    public Integer getGeneratorId() {
         return generatorId;
     }
 
-    public void setGeneratorId(int generatorId) {
+    public void setGeneratorId(Integer generatorId) {
         this.generatorId = generatorId;
     }
 
@@ -145,27 +145,27 @@ public class SmiClientsEntity {
         this.clientSign = clientSign;
     }
 
-    private int avatarId;
+    private Integer avatarId;
 
     @javax.persistence.Column(name = "avatar_id")
     @Basic
-    public int getAvatarId() {
+    public Integer getAvatarId() {
         return avatarId;
     }
 
-    public void setAvatarId(int avatarId) {
+    public void setAvatarId(Integer avatarId) {
         this.avatarId = avatarId;
     }
 
-    private int interfaces;
+    private Integer interfaces;
 
     @javax.persistence.Column(name = "interfaces")
     @Basic
-    public int getInterfaces() {
+    public Integer getInterfaces() {
         return interfaces;
     }
 
-    public void setInterfaces(int interfaces) {
+    public void setInterfaces(Integer interfaces) {
         this.interfaces = interfaces;
     }
 
@@ -217,39 +217,39 @@ public class SmiClientsEntity {
         this.ef = ef;
     }
 
-    private int odobs;
+    private Integer odobs;
 
     @javax.persistence.Column(name = "odobs")
     @Basic
-    public int getOdobs() {
+    public Integer getOdobs() {
         return odobs;
     }
 
-    public void setOdobs(int odobs) {
+    public void setOdobs(Integer odobs) {
         this.odobs = odobs;
     }
 
-    private int isHaveignored;
+    private Integer isHaveignored;
 
     @javax.persistence.Column(name = "is_haveignored")
     @Basic
-    public int getHaveignored() {
+    public Integer getHaveignored() {
         return isHaveignored;
     }
 
-    public void setHaveignored(int haveignored) {
+    public void setHaveignored(Integer haveignored) {
         isHaveignored = haveignored;
     }
 
-    private int place;
+    private Integer place;
 
     @javax.persistence.Column(name = "place")
     @Basic
-    public int getPlace() {
+    public Integer getPlace() {
         return place;
     }
 
-    public void setPlace(int place) {
+    public void setPlace(Integer place) {
         this.place = place;
     }
 
@@ -517,27 +517,27 @@ public class SmiClientsEntity {
         this.emailmd5 = emailmd5;
     }
 
-    private int complaint;
+    private Integer complaint;
 
     @javax.persistence.Column(name = "complaint")
     @Basic
-    public int getComplaint() {
+    public Integer getComplaint() {
         return complaint;
     }
 
-    public void setComplaint(int complaint) {
+    public void setComplaint(Integer complaint) {
         this.complaint = complaint;
     }
 
-    private int servicePartnerId;
+    private Integer servicePartnerId;
 
     @javax.persistence.Column(name = "service_partner_id")
     @Basic
-    public int getServicePartnerId() {
+    public Integer getServicePartnerId() {
         return servicePartnerId;
     }
 
-    public void setServicePartnerId(int servicePartnerId) {
+    public void setServicePartnerId(Integer servicePartnerId) {
         this.servicePartnerId = servicePartnerId;
     }
 
@@ -589,15 +589,15 @@ public class SmiClientsEntity {
         this.check = check;
     }
 
-    private int ratePos;
+    private Integer ratePos;
 
     @javax.persistence.Column(name = "rate_pos")
     @Basic
-    public int getRatePos() {
+    public Integer getRatePos() {
         return ratePos;
     }
 
-    public void setRatePos(int ratePos) {
+    public void setRatePos(Integer ratePos) {
         this.ratePos = ratePos;
     }
 
@@ -649,15 +649,15 @@ public class SmiClientsEntity {
         this.notificationOther = notificationOther;
     }
 
-    private byte encouragement;
+    private Integer encouragement;
 
     @javax.persistence.Column(name = "encouragement")
     @Basic
-    public byte getEncouragement() {
+    public Integer getEncouragement() {
         return encouragement;
     }
 
-    public void setEncouragement(byte encouragement) {
+    public void setEncouragement(Integer encouragement) {
         this.encouragement = encouragement;
     }
 
@@ -704,21 +704,21 @@ public class SmiClientsEntity {
 
         SmiClientsEntity that = (SmiClientsEntity) o;
 
-        if (avatarId != that.avatarId) return false;
-        if (complaint != that.complaint) return false;
+        if (!avatarId.equals(that.avatarId)) return false;
+        if (!complaint.equals(that.complaint)) return false;
         if (Float.compare(that.ef, ef) != 0) return false;
-        if (encouragement != that.encouragement) return false;
-        if (generatorId != that.generatorId) return false;
-        if (interfaces != that.interfaces) return false;
+        if (!encouragement.equals(that.encouragement)) return false;
+        if (!generatorId.equals(that.generatorId)) return false;
+        if (!interfaces.equals(that.interfaces)) return false;
         if (isBanned != that.isBanned) return false;
-        if (isHaveignored != that.isHaveignored) return false;
+        if (!isHaveignored.equals(that.isHaveignored)) return false;
         if (isReqauth != that.isReqauth) return false;
         if (isSendmails != that.isSendmails) return false;
-        if (odobs != that.odobs) return false;
-        if (place != that.place) return false;
+        if (!odobs.equals(that.odobs)) return false;
+        if (!place.equals(that.place)) return false;
         if (Float.compare(that.rate, rate) != 0) return false;
-        if (ratePos != that.ratePos) return false;
-        if (servicePartnerId != that.servicePartnerId) return false;
+        if (!ratePos.equals(that.ratePos)) return false;
+        if (!servicePartnerId.equals(that.servicePartnerId)) return false;
         if (Float.compare(that.weight, weight) != 0) return false;
         if (check != null ? !check.equals(that.check) : that.check != null) return false;
         if (clientAbout != null ? !clientAbout.equals(that.clientAbout) : that.clientAbout != null) return false;
@@ -772,14 +772,13 @@ public class SmiClientsEntity {
             return false;
         if (smiEmailPasswd != null ? !smiEmailPasswd.equals(that.smiEmailPasswd) : that.smiEmailPasswd != null)
             return false;
-        if (weightLock != null ? !weightLock.equals(that.weightLock) : that.weightLock != null) return false;
+        return !(weightLock != null ? !weightLock.equals(that.weightLock) : that.weightLock != null);
 
-        return true;
     }
 
     @Override
     public int hashCode() {
-        int result = generatorId;
+        Integer result = generatorId;
         result = 31 * result + (dt != null ? dt.hashCode() : 0);
         result = 31 * result + (clientEmail != null ? clientEmail.hashCode() : 0);
         result = 31 * result + (clientNick != null ? clientNick.hashCode() : 0);
@@ -832,7 +831,7 @@ public class SmiClientsEntity {
         result = 31 * result + (correspondent != null ? correspondent.hashCode() : 0);
         result = 31 * result + (notificationComments != null ? notificationComments.hashCode() : 0);
         result = 31 * result + (notificationOther != null ? notificationOther.hashCode() : 0);
-        result = 31 * result + (int) encouragement;
+        result = 31 * result + encouragement;
         result = 31 * result + (smiEmail != null ? smiEmail.hashCode() : 0);
         result = 31 * result + (smiEmailPasswd != null ? smiEmailPasswd.hashCode() : 0);
         result = 31 * result + (smiEmailChecked != null ? smiEmailChecked.hashCode() : 0);

@@ -1,6 +1,5 @@
 package net.smi2.kernel.controllers;
 
-import net.smi2.entities.db.Smi2Entity;
 import net.smi2.entities.db.SmiNewsEntity;
 import net.smi2.kernel.entities.NewsPool;
 import net.smi2.kernel.entities.PoolManager;
@@ -9,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import ru.yandex.lc.jbd.Dumper;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -44,10 +44,13 @@ public class NewsController {
         } else {
             response.setContentType("text/html");
             response.setCharacterEncoding("utf-8");
-            String str = "";
-            for (Smi2Entity element : news) {
+            String str;
+            /*for (Smi2Entity element : news) {
                 str = str + "\n" + element;
             }
+            */
+            Dumper dumper = new Dumper();
+            str = "<pre>" + dumper.dump( news ) + "</pre>";
             os.write(str.getBytes());
         }
 

@@ -14,7 +14,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="web:WEB-INF:classes:hibernate.cfg.xml" />
+          <unit-entry name="web:WEB-INF:classes:hibernate.cfg.xml" value="523bf4cb-be1c-4b73-9d05-d328daac6ff8" />
         </datasource-map>
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/web/WEB-INF/classes/hibernate.cfg.xml" />
       </configuration>
@@ -44,6 +44,7 @@
     <orderEntry type="library" name="mysql" level="project" />
     <orderEntry type="library" name="jpa" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="jbeandumper.1.5.1" level="project" />
   </component>
 </module>
 

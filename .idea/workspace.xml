@@ -8,15 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="85d2671d-f22e-4602-b0a7-1222ebfd6a22" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/smi2_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/smi2_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/okakiy.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/okakiy.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smi2.iml" afterPath="$PROJECT_DIR$/smi2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java" afterPath="$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java" afterPath="$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsPool.java" afterPath="$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsPool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/hibernate.cfg.xml" />
     </list>
     <ignored path="smi2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,10 +81,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NewsController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NewsController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="63" selection-start="951" selection-end="951" vertical-scroll-proportion="-0.7512563">
+            <state line="52" column="56" selection-start="1999" selection-end="1999" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmiNewsEntity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="158" column="36" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.78672034">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmiClientsEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="772" column="8" selection-start="21039" selection-end="21039" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Smi2Entity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/smi2/entities/db/Smi2Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +124,7 @@
       <file leaf-file-name="NewsPool.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="74" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
+            <state line="27" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,14 +155,14 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/net/smi2/TestClass.java" />
         <option value="$PROJECT_DIR$/src/net/smi2/tmp.java" />
-        <option value="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java" />
         <option value="$PROJECT_DIR$/smi2/web/WEB-INF/classes/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/smi2.iml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/smi2-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java" />
         <option value="$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsPool.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java" />
+        <option value="$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java" />
       </list>
     </option>
   </component>
@@ -319,7 +348,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="374" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="383" />
     <property name="OverrideImplement.combined" value="true" />
@@ -585,7 +614,7 @@
     </configuration>
     <configuration default="false" name="JBoss 7.0.2.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 7.0.2.Final">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/smi2_war/smi2_war/smi2_war_exploded/smi2_war_exploded/smi2_war_exploded/smi2_war_exploded/smi2_war_exploded/smi2_war_exploded/lastnews.json" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/smi2_war/smi2_war/smi2_war/smi2_war_exploded/smi2_war_exploded/smi2_war_exploded/smi2_war_exploded/smi2_war_exploded/smi2_war_exploded/lastnews.json" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="smi2:war">
@@ -638,7 +667,7 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="false">
+        <option name="BuildArtifacts" enabled="true">
           <artifact name="smi2:war exploded" />
           <artifact name="smi2:war" />
         </option>
@@ -692,10 +721,10 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15170941" sideWeight="0.47104678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06303419" sideWeight="0.58129174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3429844" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.1804009" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.22271715" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55122495" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -710,8 +739,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17094018" sideWeight="0.5712695" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.28285077" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.52895325" sideWeight="0.70352566" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.3507795" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41870824" sideWeight="0.70352566" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -754,7 +783,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="4nd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="JNDI datasource" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -774,6 +803,7 @@
     <MESSAGE value="2nd commit" />
     <MESSAGE value="3nd commit" />
     <MESSAGE value="4nd commit" />
+    <MESSAGE value="JNDI datasource" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -817,11 +847,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/dist/springframework/org.springframework.beans-3.1.0.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="0" selection-start="11030" selection-end="11030" vertical-scroll-proportion="0.8285078" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -835,11 +860,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/ant.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="10" selection-start="109" selection-end="109" vertical-scroll-proportion="0.058419243" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="254" selection-end="265" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsListJson.java">
@@ -882,15 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="68" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="59" selection-start="687" selection-end="687" vertical-scroll-proportion="0.32352942">
@@ -914,17 +925,42 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/smi2/entities/db/Smi2Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/smi2/kernel/entities/NewsPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="74" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
+        <state line="27" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/smi2/kernel/controllers/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="63" selection-start="951" selection-end="951" vertical-scroll-proportion="-0.7512563">
+        <state line="52" column="56" selection-start="1999" selection-end="1999" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/smi2/entities/db/SmiClientsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="772" column="8" selection-start="21039" selection-end="21039" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/smi2/entities/db/SmiNewsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="36" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.78672034">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -945,7 +981,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20000002" />
+                <option value="0.20000003" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1024,11 +1060,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>springframework</last-edited>
+          <last-edited>jbeandumper.1.5.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20000002" />
+                <option value="0.20000003" />
               </list>
             </option>
           </splitter-proportions>

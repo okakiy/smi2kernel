@@ -10,7 +10,7 @@ import java.sql.Timestamp;
  * Date: 02.02.12
  * Time: 13:36
  */
-@javax.persistence.Table(name = "smi_news", schema = "", catalog = "")
+@javax.persistence.Table(name = "smi_news", schema = "", catalog = "smi20")
 @Entity
 public class SmiNewsEntity extends Smi2Entity {
     private Integer id;
@@ -134,6 +134,7 @@ public class SmiNewsEntity extends Smi2Entity {
     private SmiClientsEntity smi_clients;
 */
 
+
     private Integer authorId;
 
     @JsonIgnore
@@ -142,9 +143,21 @@ public class SmiNewsEntity extends Smi2Entity {
     public Integer getAuthorId() {
         return authorId;
     }
-
-    public void setAuthorId(Integer  authorId) {
+    public void setAuthorId(Integer authorId) {
         this.authorId = authorId;
+    }
+
+
+    private SmiClientsEntity authorObject;
+
+    @ManyToOne(targetEntity = net.smi2.entities.db.SmiClientsEntity.class,optional = false)
+    @JoinColumn(name="author_eid",insertable = false, updatable = false,nullable = true)
+    public SmiClientsEntity getAuthorObject() {
+        return authorObject;
+    }
+
+    public void setAuthorObject(SmiClientsEntity authorObject) {
+        this.authorObject = authorObject;
     }
 
     private Integer authorEid;
@@ -1069,13 +1082,4 @@ public class SmiNewsEntity extends Smi2Entity {
         return result;
     }
 
-/*
-    public SmiClientsEntity getSmi_clients() {
-        return smi_clients;
-    }
-
-    public void setSmi_clients(SmiClientsEntity smi_clients) {
-        this.smi_clients = smi_clients;
-    }
-*/
 }
