@@ -4,10 +4,12 @@ import net.smi2.entities.db.SmiNewsEntity;
 import net.smi2.kernel.entities.NewsPool;
 import net.smi2.kernel.entities.PoolManager;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.SerializationConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.view.json.MappingJacksonJsonView;
 import ru.yandex.lc.jbd.Dumper;
 
 import javax.servlet.http.HttpServletResponse;
@@ -24,6 +26,9 @@ public class NewsController {
     @Autowired
     private PoolManager poolManager;
 
+    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final MappingJacksonJsonView view = new MappingJacksonJsonView();
+
     @RequestMapping("lastnews.json")
     public void lastNews(
             @RequestParam(value = "of", required = false, defaultValue = "0") int of,
@@ -36,11 +41,11 @@ public class NewsController {
         List<SmiNewsEntity> news = newsPool.getNews(of, cnt );
         OutputStream os = response.getOutputStream();
         
-        ObjectMapper mapper = new ObjectMapper();
-        if ( as.equals("JSON")) {
+        if ( as.equals("JSON") ) {
             response.setContentType("application/json");
             response.setCharacterEncoding("utf-8");
-            mapper.writeValue(os, news);
+            objectMapper.configure(SerializationConfig.Feature.DEFAULT_VIEW_INCLUSION, false);
+            objectMapper.writerWithView(SmiNewsEntity.ShortView.class).writeValue(os, news);
         } else {
             response.setContentType("text/html");
             response.setCharacterEncoding("utf-8");

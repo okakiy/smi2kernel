@@ -1,5 +1,7 @@
 package net.smi2.entities.db;
 
+import org.codehaus.jackson.map.annotate.JsonView;
+
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,11 +13,12 @@ import javax.persistence.Id;
  */
 @javax.persistence.Table(name = "smi_images", schema = "", catalog = "smi20")
 @Entity
-public class SmiImagesEntity {
+public class SmiImagesEntity  extends Smi2Entity {
     private int id;
 
     @javax.persistence.Column(name = "id")
     @Id
+    @JsonView(ShortView.class)
     public int getId() {
         return id;
     }
@@ -28,6 +31,7 @@ public class SmiImagesEntity {
 
     @javax.persistence.Column(name = "type")
     @Basic
+    @JsonView(ShortView.class)
     public String getType() {
         return type;
     }
@@ -52,6 +56,7 @@ public class SmiImagesEntity {
 
     @javax.persistence.Column(name = "width")
     @Basic
+    @JsonView(ShortView.class)
     public int getWidth() {
         return width;
     }
@@ -64,6 +69,7 @@ public class SmiImagesEntity {
 
     @javax.persistence.Column(name = "height")
     @Basic
+    @JsonView(ShortView.class)
     public int getHeight() {
         return height;
     }

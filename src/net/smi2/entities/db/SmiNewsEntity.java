@@ -1,6 +1,7 @@
 package net.smi2.entities.db;
 
-import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.map.annotate.JsonView;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -15,8 +16,9 @@ import java.sql.Timestamp;
 public class SmiNewsEntity extends Smi2Entity {
     private Integer id;
 
-	@javax.persistence.Column(name = "id")
+    @javax.persistence.Column(name = "id")
     @Id
+    @JsonView(ShortView.class)
     public int getId() {
         return id;
     }
@@ -27,8 +29,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String status;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "status")
+    @javax.persistence.Column(name = "status")
     @Basic
     public String getStatus() {
         return status;
@@ -40,9 +41,9 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer odob;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "odob")
+    @javax.persistence.Column(name = "odob")
     @Basic
+    @JsonView(ShortView.class)
     public Integer getOdob() {
         return odob;
     }
@@ -53,8 +54,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private float odobReal;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "odob_real")
+    @javax.persistence.Column(name = "odob_real")
     @Basic
     public float getOdobReal() {
         return odobReal;
@@ -66,8 +66,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer spam;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "spam")
+    @javax.persistence.Column(name = "spam")
     @Basic
     public Integer getSpam() {
         return spam;
@@ -79,8 +78,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private float spamReal;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "spam_real")
+    @javax.persistence.Column(name = "spam_real")
     @Basic
     public float getSpamReal() {
         return spamReal;
@@ -94,6 +92,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
 	@javax.persistence.Column(name = "title")
     @Basic
+    @JsonView(ShortView.class)
     public String getTitle() {
         return title;
     }
@@ -104,8 +103,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String titleSecond;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "title_second", nullable=true)
+    @javax.persistence.Column(name = "title_second", nullable=true)
     @Basic
     public String getTitleSecond() {
         return titleSecond;
@@ -117,8 +115,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String author;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "author")
+    @javax.persistence.Column(name = "author")
     @Basic
     public String getAuthor() {
         return author;
@@ -137,8 +134,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer authorId;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "author_id")
+    @javax.persistence.Column(name = "author_id")
     @Basic
     public Integer getAuthorId() {
         return authorId;
@@ -152,6 +148,8 @@ public class SmiNewsEntity extends Smi2Entity {
 
     @ManyToOne(targetEntity = net.smi2.entities.db.SmiClientsEntity.class,optional = false)
     @JoinColumn(name="author_eid",insertable = false, updatable = false,nullable = true)
+    @JsonView(ShortView.class)
+    @JsonProperty("author")
     public SmiClientsEntity getAuthorObject() {
         return authorObject;
     }
@@ -160,10 +158,23 @@ public class SmiNewsEntity extends Smi2Entity {
         this.authorObject = authorObject;
     }
 
+    private SmiImagesEntity imageObject;
+
+    @ManyToOne(targetEntity = SmiImagesEntity.class,optional = false)
+    @JoinColumn(name="image_id",insertable = false, updatable = false,nullable = true)
+    @JsonView(ShortView.class)
+    @JsonProperty("image")
+    public SmiImagesEntity getImageObject() {
+        return imageObject;
+    }
+
+    public void setImageObject(SmiImagesEntity imageObject) {
+        this.imageObject = imageObject;
+    }
+
     private Integer authorEid;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "author_eid")
+    @javax.persistence.Column(name = "author_eid")
     @Basic
     public Integer getAuthorEid() {
         return authorEid;
@@ -175,9 +186,9 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String text;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "text")
+    @javax.persistence.Column(name = "text")
     @Basic
+    @JsonView(ShortView.class)
     public String getText() {
         return text;
     }
@@ -188,8 +199,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String cat;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "cat")
+    @javax.persistence.Column(name = "cat")
     @Basic
     public String getCat() {
         return cat;
@@ -201,8 +211,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String tags;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "tags")
+    @javax.persistence.Column(name = "tags")
     @Basic
     public String getTags() {
         return tags;
@@ -214,9 +223,9 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String link;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "link")
+    @javax.persistence.Column(name = "link")
     @Basic
+    @JsonView(ShortView.class)
     public String getLink() {
         return link;
     }
@@ -227,8 +236,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String striplink;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "striplink")
+    @javax.persistence.Column(name = "striplink")
     @Basic
     public String getStriplink() {
         return striplink;
@@ -240,9 +248,9 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer imageId;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "image_id")
+    @javax.persistence.Column(name = "image_id")
     @Basic
+    @JsonView(ShortView.class)
     public Integer getImageId() {
         return imageId;
     }
@@ -253,9 +261,9 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer comments;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "comments")
+    @javax.persistence.Column(name = "comments")
     @Basic
+    @JsonView(ShortView.class)
     public Integer getComments() {
         return comments;
     }
@@ -266,8 +274,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer comments0;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "comments0", nullable=true)
+    @javax.persistence.Column(name = "comments0", nullable=true)
     @Basic
     public Integer getComments0() {
         return comments0;
@@ -279,8 +286,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer lastCommentId;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "last_comment_id", nullable=true)
+    @javax.persistence.Column(name = "last_comment_id", nullable=true)
     @Basic
     public Integer getLastCommentId() {
         return lastCommentId;
@@ -292,8 +298,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private float weight;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "weight")
+    @javax.persistence.Column(name = "weight")
     @Basic
     public float getWeight() {
         return weight;
@@ -305,8 +310,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer wsourceId;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "wsource_id")
+    @javax.persistence.Column(name = "wsource_id")
     @Basic
     public Integer getWsourceId() {
         return wsourceId;
@@ -318,8 +322,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer sourceId;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "source_id")
+    @javax.persistence.Column(name = "source_id")
     @Basic
     public Integer getSourceId() {
         return sourceId;
@@ -331,8 +334,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer catId;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "cat_id")
+    @javax.persistence.Column(name = "cat_id")
     @Basic
     public Integer getCatId() {
         return catId;
@@ -344,9 +346,9 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Timestamp addDate;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "add_date")
+    @javax.persistence.Column(name = "add_date")
     @Basic
+    @JsonView(ShortView.class)
     public Timestamp getAddDate() {
         return addDate;
     }
@@ -357,8 +359,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer showSite;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "show_site")
+    @javax.persistence.Column(name = "show_site")
     @Basic
     public Integer getShowSite() {
         return showSite;
@@ -370,8 +371,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer clickSite;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "click_site")
+    @javax.persistence.Column(name = "click_site")
     @Basic
     public Integer getClickSite() {
         return clickSite;
@@ -383,8 +383,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer showPatrner;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "show_patrner")
+    @javax.persistence.Column(name = "show_patrner")
     @Basic
     public Integer getShowPatrner() {
         return showPatrner;
@@ -396,8 +395,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer clickPartner;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "click_partner")
+    @javax.persistence.Column(name = "click_partner")
     @Basic
     public Integer getClickPartner() {
         return clickPartner;
@@ -409,8 +407,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer clickRss;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "click_rss")
+    @javax.persistence.Column(name = "click_rss")
     @Basic
     public Integer getClickRss() {
         return clickRss;
@@ -422,8 +419,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer  odobLevel;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "odob_level")
+    @javax.persistence.Column(name = "odob_level")
     @Basic
     public Integer  getOdobLevel() {
         return odobLevel;
@@ -435,8 +431,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer  mod2Rss;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "mod2rss")
+    @javax.persistence.Column(name = "mod2rss")
     @Basic
     public Integer  getMod2Rss() {
         return mod2Rss;
@@ -448,8 +443,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Timestamp date2Rss;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "date2rss")
+    @javax.persistence.Column(name = "date2rss")
     @Basic
     public Timestamp getDate2Rss() {
         return date2Rss;
@@ -461,8 +455,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer  isNomain;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "is_nomain")
+    @javax.persistence.Column(name = "is_nomain")
     @Basic
     public Integer  getNomain() {
         return isNomain;
@@ -474,8 +467,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Timestamp date2Yrss;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "date2yrss")
+    @javax.persistence.Column(name = "date2yrss")
     @Basic
     public Timestamp getDate2Yrss() {
         return date2Yrss;
@@ -487,8 +479,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer fulltextId;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "fulltext_id")
+    @javax.persistence.Column(name = "fulltext_id")
     @Basic
     public Integer getFulltextId() {
         return fulltextId;
@@ -500,8 +491,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer  type;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "type")
+    @javax.persistence.Column(name = "type")
     @Basic
     public Integer  getType() {
         return type;
@@ -513,8 +503,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer  isEditorial;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "is_editorial")
+    @javax.persistence.Column(name = "is_editorial")
     @Basic
     public Integer  getEditorial() {
         return isEditorial;
@@ -526,8 +515,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String smiImage;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "smi_image")
+    @javax.persistence.Column(name = "smi_image")
     @Basic
     public String getSmiImage() {
         return smiImage;
@@ -539,8 +527,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String smiVideo;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "smi_video")
+    @javax.persistence.Column(name = "smi_video")
     @Basic
     public String getSmiVideo() {
         return smiVideo;
@@ -552,8 +539,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String sourceUrl;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "source_url")
+    @javax.persistence.Column(name = "source_url")
     @Basic
     public String getSourceUrl() {
         return sourceUrl;
@@ -565,8 +551,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String smiVideoHtml;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "smi_video_html", nullable=true)
+    @javax.persistence.Column(name = "smi_video_html", nullable=true)
     @Basic
     public String getSmiVideoHtml() {
         return smiVideoHtml;
@@ -578,8 +563,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private float oldWeight;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "old_weight")
+    @javax.persistence.Column(name = "old_weight")
     @Basic
     public float getOldWeight() {
         return oldWeight;
@@ -591,8 +575,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer  isAddcomments;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "is_addcomments")
+    @javax.persistence.Column(name = "is_addcomments")
     @Basic
     public Integer  getAddcomments() {
         return isAddcomments;
@@ -604,8 +587,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer answerEid;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "answer_eid")
+    @javax.persistence.Column(name = "answer_eid")
     @Basic
     public Integer getAnswerEid() {
         return answerEid;
@@ -617,8 +599,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private short statusIndex;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "status_index")
+    @javax.persistence.Column(name = "status_index")
     @Basic
     public short getStatusIndex() {
         return statusIndex;
@@ -630,8 +611,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer partnerId;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "partner_id")
+    @javax.persistence.Column(name = "partner_id")
     @Basic
     public Integer getPartnerId() {
         return partnerId;
@@ -643,8 +623,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String binds;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "binds")
+    @javax.persistence.Column(name = "binds")
     @Basic
     public String getBinds() {
         return binds;
@@ -656,8 +635,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private boolean isCompetitor;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "is_competitor")
+    @javax.persistence.Column(name = "is_competitor")
     @Basic
     public boolean isCompetitor() {
         return isCompetitor;
@@ -669,8 +647,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private boolean isDraft;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "is_draft")
+    @javax.persistence.Column(name = "is_draft")
     @Basic
     public boolean isDraft() {
         return isDraft;
@@ -682,8 +659,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer editorOdob;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "editor_odob")
+    @javax.persistence.Column(name = "editor_odob")
     @Basic
     public Integer getEditorOdob() {
         return editorOdob;
@@ -695,8 +671,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private float editorWeight;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "editor_weight")
+    @javax.persistence.Column(name = "editor_weight")
     @Basic
     public float getEditorWeight() {
         return editorWeight;
@@ -708,8 +683,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private boolean lastCommenteffect;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "last_commenteffect")
+    @javax.persistence.Column(name = "last_commenteffect")
     @Basic
     public boolean isLastCommenteffect() {
         return lastCommenteffect;
@@ -721,8 +695,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Float weightComm;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "weight_comm", nullable=true)
+    @javax.persistence.Column(name = "weight_comm", nullable=true)
     @Basic
     public Float getWeightComm() {
         return weightComm;
@@ -734,8 +707,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String ip;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "ip")
+    @javax.persistence.Column(name = "ip")
     @Basic
     public String getIp() {
         return ip;
@@ -747,8 +719,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer haveGallery;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "have_gallery")
+    @javax.persistence.Column(name = "have_gallery")
     @Basic
     public Integer getHaveGallery() {
         return haveGallery;
@@ -760,8 +731,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer odobPositive;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "odob_positive")
+    @javax.persistence.Column(name = "odob_positive")
     @Basic
     public Integer getOdobPositive() {
         return odobPositive;
@@ -773,8 +743,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer odobNegative;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "odob_negative")
+    @javax.persistence.Column(name = "odob_negative")
     @Basic
     public Integer getOdobNegative() {
         return odobNegative;
@@ -786,8 +755,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String paidArticleStatus;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "paid_article_status", nullable=true)
+    @javax.persistence.Column(name = "paid_article_status", nullable=true)
     @Basic
     public String getPaidArticleStatus() {
         return paidArticleStatus;
@@ -799,8 +767,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer haveSpecialComment;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "have_special_comment", nullable=true)
+    @javax.persistence.Column(name = "have_special_comment", nullable=true)
     @Basic
     public Integer getHaveSpecialComment() {
         return haveSpecialComment;
@@ -812,8 +779,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer haveBf;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "have_bf", nullable=true)
+    @javax.persistence.Column(name = "have_bf", nullable=true)
     @Basic
     public Integer getHaveBf() {
         return haveBf;
@@ -825,8 +791,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer haveChains;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "have_chains")
+    @javax.persistence.Column(name = "have_chains")
     @Basic
     public Integer getHaveChains() {
         return haveChains;
@@ -838,8 +803,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private boolean isClannews;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "is_clannews")
+    @javax.persistence.Column(name = "is_clannews")
     @Basic
     public boolean isClannews() {
         return isClannews;
@@ -851,8 +815,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer  isHavehistory;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "is_havehistory")
+    @javax.persistence.Column(name = "is_havehistory")
     @Basic
     public Integer  getHavehistory() {
         return isHavehistory;
@@ -864,8 +827,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private boolean isBookmark;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "is_bookmark")
+    @javax.persistence.Column(name = "is_bookmark")
     @Basic
     public boolean isBookmark() {
         return isBookmark;
@@ -877,8 +839,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Timestamp lastUpdateTime;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "last_update_time")
+    @javax.persistence.Column(name = "last_update_time")
     @Basic
     public Timestamp getLastUpdateTime() {
         return lastUpdateTime;
@@ -890,8 +851,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Timestamp topDate;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "top_date", nullable=true)
+    @javax.persistence.Column(name = "top_date", nullable=true)
     @Basic
     public Timestamp getTopDate() {
         return topDate;
@@ -903,8 +863,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private String language;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "language")
+    @javax.persistence.Column(name = "language")
     @Basic
     public String getLanguage() {
         return language;
@@ -916,8 +875,7 @@ public class SmiNewsEntity extends Smi2Entity {
 
     private Integer adPrice;
 
-    @JsonIgnore
-	@javax.persistence.Column(name = "ad_price")
+    @javax.persistence.Column(name = "ad_price")
     @Basic
     public Integer getAdPrice() {
         return adPrice;
@@ -1081,5 +1039,4 @@ public class SmiNewsEntity extends Smi2Entity {
         result = 31 * result + adPrice;
         return result;
     }
-
 }

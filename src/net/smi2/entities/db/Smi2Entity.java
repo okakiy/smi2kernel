@@ -45,4 +45,6 @@ public class Smi2Entity {
     public String toString() {
         return "============================================================================\n" + title + "\"" + author + "\"" + "\n\t" + text;
     }
+
+    public interface ShortView { }
 }

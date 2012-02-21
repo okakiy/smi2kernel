@@ -1,5 +1,8 @@
 package net.smi2.entities.db;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.map.annotate.JsonView;
+
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -17,6 +20,8 @@ public class SmiClientsEntity {
 
     @javax.persistence.Column(name = "generator_id")
     @Id
+    @JsonView(SmiNewsEntity.ShortView.class)
+    @JsonProperty("id")
     public Integer getGeneratorId() {
         return generatorId;
     }
@@ -53,6 +58,8 @@ public class SmiClientsEntity {
 
     @javax.persistence.Column(name = "client_nick")
     @Basic
+    @JsonView(SmiNewsEntity.ShortView.class)
+    @JsonProperty("nick")
     public String getClientNick() {
         return clientNick;
     }
@@ -329,6 +336,8 @@ public class SmiClientsEntity {
 
     @javax.persistence.Column(name = "client_fname")
     @Basic
+    @JsonView(SmiNewsEntity.ShortView.class)
+    @JsonProperty("firstName")
     public String getClientFname() {
         return clientFname;
     }
@@ -341,6 +350,8 @@ public class SmiClientsEntity {
 
     @javax.persistence.Column(name = "client_lname")
     @Basic
+    @JsonView(SmiNewsEntity.ShortView.class)
+    @JsonProperty("lastName")
     public String getClientLname() {
         return clientLname;
     }
